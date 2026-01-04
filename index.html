@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wafi Amrullah Azzaky | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- Ionicons for icons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body>
+
+    <!-- Custom Cursor -->
+    <div class="cursor-dot" data-cursor-dot></div>
+    <div class="cursor-outline" data-cursor-outline></div>
+
+    <!-- Canvas Background for Particles -->
+    <canvas id="particles"></canvas>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo"> <img src="dovzak.png" alt="">DOVZAK</a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">Tentang</a></li>
+                <li><a href="#experience">Pengalaman</a></li>
+                <li><a href="#contact">Kontak</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero section">
+            <div class="container hero-container">
+                <div class="hero-text" id="heroText">
+                    <div class="role-badge">Web Developer, Designer, & Video Editor</div>
+                    <h1>Hello, I'm <br><span>Wafi Amrullah Azzaky</span></h1>
+                    <p class="tagline">
+                        Menyatukan estetika desain, narasi video, dan fungsionalitas web. Saya berfokus pada pemecahan
+                        masalah dan penciptaan solusi digital yang presisi memadukan kode yang efisien dengan visual
+                        yang memikat untuk hasil yang lebih dari sekadar berfungsi
+                    </p>
+
+                    <div class="magnetic-btn-wrapper magnetic-btn" data-strength="30">
+                        <a href="#contact" class="cta-btn">
+                            <span>Mulai Proyek</span>
+                            <ion-icon name="arrow-forward-outline"></ion-icon>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="hero-image-wrapper" data-aos="fade-left" data-aos-duration="1500">
+                    <div class="profile-card float-anim" id="tiltCard">
+                        <div class="profile-img-container">
+                            <img src="./profile_pic.jpg" alt="Wafi Amrullah Azzaky" class="profile-img">
+                        </div>
+
+                        <!-- Floating Elements -->
+                        <div class="floating-card card-1 float-anim-delay">
+                            <ion-icon name="color-palette-outline"></ion-icon>
+                            <div>
+                                <strong>Desainer</strong>
+                                <span class="sub-text">Expert</span>
+                            </div>
+                        </div>
+
+                        <div class="floating-card card-2 float-anim-2">
+                            <ion-icon name="code-slash-outline"></ion-icon>
+                            <div>
+                                <strong>Code</strong>
+                                <span class="sub-text">Clean</span>
+                            </div>
+                        </div>
+
+                        <div class="floating-card card-3 float-anim-3">
+                            <ion-icon name="construct-outline"></ion-icon>
+                            <div>
+                                <strong>Problem Solver</strong>
+                                <span class="sub-text">Expert</span>
+                            </div>
+                        </div>
+
+                        <div class="floating-card card-4 float-anim">
+                            <ion-icon name="videocam-outline"></ion-icon>
+                            <div>
+                                <strong>Video Editor</strong>
+                                <span class="sub-text">Pro</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about section">
+            <div class="container" data-aos="fade-up">
+                <h2 class="section-title">Tentang Saya</h2>
+                <div class="about-content glass-card" data-aos="zoom-in" data-aos-duration="2500">
+                    <div class="about-text">
+                        <p>
+                            Halo! Saya seorang kreator asal Cirebon yang bergerak di persimpangan antara estetika dan
+                            logika. Sebagai desainer dan video editor, saya bercerita melalui visual. Sebagai pengembang
+                            web, saya membangun struktur menggunakan HTML, CSS, dan JavaScript murni untuk menciptakan
+                            pengalaman digital yang bersih.
+                        </p>
+                        <p>
+                            Keahlian tersembunyi saya adalah Problem solving. Saya sangat suka memperbaiki sesuatu yang
+                            rusak—baik itu bug pada kode, komposisi desain yang janggal, maupun alur video yang tidak
+                            sinkron. Saya memastikan setiap proyek tidak hanya terlihat bagus, tapi juga bekerja dengan
+                            sempurna.
+                        </p>
+                        <div class="skills-grid">
+                            <div class="skill-item" data-aos="zoom-out-down" data-aos-duration="1000">Coding</div>
+                            <div class="skill-item" data-aos="zoom-out-down" data-aos-duration="1000">Design</div>
+                            <div class="skill-item" data-aos="zoom-out-down" data-aos-duration="1000">Problem Solving
+                            </div>
+                            <div class="skill-item" data-aos="zoom-out-down" data-aos-duration="1000">Video Editing
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="experience section">
+            <div class="container" data-aos="fade-up">
+                <h2 class="section-title">Pengalaman & Proyek</h2>
+                <div class="experience-grid">
+                    <!-- Project Card 1 -->
+                    <div class="project-card glass-card hover-tilt" data-aos="fade-down-right" data-aos-duration="1000">
+                        <div class="card-icon">
+                            <ion-icon name="code-slash-outline"></ion-icon>
+                        </div>
+                        <h3>Web Development</h3>
+                        <p>Membangun fondasi situs web yang kuat dan responsif menggunakan HTML, CSS, dan JavaScript
+                            murni. Saya berfokus pada penulisan kode yang efisien untuk menciptakan pengalaman pengguna
+                            yang cepat, fungsional, dan ramah di berbagai perangkat.</p>
+                        <div class="tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+
+                    <!-- Project Card 2 -->
+                    <div class="project-card glass-card hover-tilt" data-aos="fade-down-left" data-aos-duration="1000">
+                        <div class="card-icon">
+                            <ion-icon name="videocam-outline"></ion-icon>
+                        </div>
+                        <h3>Video Editing</h3>
+                        <p>Menyusun narasi visual melalui proses editing yang presisi. Ahli dalam teknik pemotongan
+                            klip, penyelarasan audio, hingga pemberian efek transisi yang halus untuk menghasilkan
+                            konten video yang dinamis dan bercerita.</p>
+                        <div class="tags">
+                            <span>Video Editing</span>
+                            <span>Editing</span>
+                        </div>
+                    </div>
+
+                    <!-- Project Card 3 -->
+                    <div class="project-card glass-card hover-tilt" data-aos="fade-down-right" data-aos-duration="1000">
+                        <div class="card-icon">
+                            <ion-icon name="color-palette-outline"></ion-icon>
+                        </div>
+                        <h3>Graphic Design</h3>
+                        <p>Menciptakan identitas visual yang memikat dan konsisten. Mulai dari tata letak hingga
+                            pemilihan palet warna, saya memastikan setiap elemen desain memiliki nilai estetika tinggi
+                            yang mampu menyampaikan pesan secara efektif.</p>
+                        <div class="tags">
+                            <span>Graphic Design</span>
+                            <span>Design</span>
+                        </div>
+                    </div>
+
+                    <!-- Project Card 4 -->
+                    <div class="project-card glass-card hover-tilt" data-aos="fade-down-left" data-aos-duration="1000">
+                        <div class="card-icon">
+                            <ion-icon name="build-outline"></ion-icon>
+                        </div>
+                        <h3>Troubleshooting & Repair</h3>
+                        <p>Sebagai seorang problem solver, saya ahli dalam menganalisis dan memperbaiki kegagalan sistem
+                            web atau ketidakkonsistenan desain. Saya memastikan setiap proyek yang 'bermasalah' kembali
+                            berfungsi optimal dengan standar kualitas terbaik.</p>
+                        <div class="tags">
+                            <span>Troubleshooting & Repair</span>
+                            <span>Repair</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact section">
+            <div class="container contact-container">
+                <h2 class="section-title">Hubungi Saya</h2>
+
+                <div class="contact-content" data-aos="fade-up" data-aos-duration="1000">
+                    <!-- Left Side: Info -->
+                    <div class="contact-info">
+                        <h3>Mari Mulai Proyek Anda</h3>
+                        <p>Tertarik untuk bekerja sama atau sekadar menyapa? Jangan ragu untuk menghubungi saya melalui
+                            formulir atau media sosial.</p>
+
+                        <div class="contact-details">
+                            <div class="contact-details-item">
+                                <ion-icon name="mail-outline"></ion-icon>
+                                <span>amrullahazzaky@gmail.com</span>
+                            </div>
+                            <div class="contact-details-item">
+                                <ion-icon name="location-outline"></ion-icon>
+                                <span>Cirebon, Indonesia</span>
+                            </div>
+                        </div>
+
+                        <div class="magnetic-btn-wrapper magnetic-btn" data-strength="50" style="margin-top: 2rem;">
+                            <a href="https://instagram.com/wafiamrull_44" target="_blank" class="instagram-btn">
+                                <ion-icon name="logo-instagram"></ion-icon>
+                                <span>Follow @wafiamrull_44</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Right Side: Form -->
+                    <div class="contact-form-wrapper" data-aos="fade-up" data-aos-duration="1000">
+                        <form class="contact-form" id="contact-form">
+                            <div class="input-box">
+                                <input type="text" name="user_name" required>
+                                <label>Nama Lengkap</label>
+                            </div>
+                            <div class="input-box">
+                                <input type="email" name="user_email" required>
+                                <label>Alamat Email</label>
+                            </div>
+                            <div class="input-box">
+                                <textarea name="message" rows="4" required></textarea>
+                                <label>Pesan Anda</label>
+                            </div>
+                            <button type="submit" class="submit-btn" style="width: 100%;">
+                                <span class="btn-text">Kirim Pesan</span>
+                                <span class="btn-loading" style="display: none;"><ion-icon name="refresh-outline"
+                                        class="spin"></ion-icon> Mengirim...</span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 Wafi Amrullah Azzaky. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

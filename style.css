@@ -683,6 +683,10 @@ body.hovering .cursor-outline {
     .contact-form-wrapper {
         padding: 2rem;
     }
+    
+    .experience-grid {
+        grid-template-columns: 1fr; /* Force 1 column on tablet */
+    }
 
     /* Navbar Mobile */
     .nav-links {
@@ -796,9 +800,19 @@ body.hovering .cursor-outline {
 }
 
 @media (max-width: 480px) {
-    .floating-card {
-        transform: scale(0.8);
+    .container {
+        padding: 0 1.5rem;
     }
+
+    .floating-card {
+        transform: scale(0.7);
+    }
+    
+    /* Adjust floating cards so they don't cause overflow on small screens */
+    .card-1 { left: -15px; top: 10px; }
+    .card-2 { right: -15px; top: 70%; }
+    .card-3 { left: -15px; top: 70%; }
+    .card-4 { right: -15px; top: 10px; }
 
     .hero-text h1 {
         font-size: 2.2rem;
@@ -806,6 +820,11 @@ body.hovering .cursor-outline {
 
     .hero-text h1 span {
         font-size: 2.5rem;
+    }
+    
+    .tagline {
+        font-size: 0.95rem;
+        line-height: 1.5;
     }
 
     .profile-card {
@@ -815,10 +834,38 @@ body.hovering .cursor-outline {
 
     .experience-grid {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-        gap: 2rem;
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    /* Adjustments for text descriptions and cards on mobile */
+    .glass-card {
+        padding: 1.5rem; /* Reduce padding inside boxes */
+    }
+    
+    .about-text {
+        font-size: 0.95rem; /* Smaller text for about section */
+        line-height: 1.6;
     }
 
+    .project-card p {
+        font-size: 0.9rem; /* Smaller text for project description */
+        line-height: 1.5;
+        margin-bottom: 1rem;
+    }
+    
+    .contact-form-wrapper {
+        padding: 1.5rem;
+    }
+    
+    .cta-btn, .submit-btn {
+        padding: 0.8rem 2rem;
+        font-size: 0.9rem;
+    }
 }
 
 
